@@ -28,7 +28,7 @@ def load_model():
 
 reader = load_model()
 
-st.title("🕵️‍♂️ Анализатор на хранителни етикети")
+st.title(" Анализатор на хранителни етикети")
 st.write("Снимай или качи снимка на етикет, за да откриеш скрити вредни съставки и Е-номера.")
 
 # Опции за добавяне на изображение: Камера или Качване на файл
@@ -54,7 +54,7 @@ if image_data is not None:
         results = reader.readtext(img_array, detail=0)
         extracted_text = " ".join(results).upper()
         
-    st.subheader("📝 Разчетен текст:")
+    st.subheader(" Разчетен текст:")
     st.write(extracted_text)
     
     st.subheader("⚠️ Открити вредни съставки (Е-кодове и ключови думи):")
